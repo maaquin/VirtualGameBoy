@@ -1,5 +1,5 @@
 import { SelectGame } from "./SelectGame";
-import { Game } from "./game";
+import { Game } from "./Game";
 import { Route, Routes } from "react-router-dom";
 
 export const Content = ({ controllerState, isPLaying, setIsPlaying, setIsGame, setIsPaused, isPaused, handleClick }) => {
