@@ -19,7 +19,7 @@ export const Dashboard = () => {
     });
 
     const handleButtonPress = (button) => {
-            setControllerState((prev) => ({ ...prev, [button]: 1 }));
+        setControllerState((prev) => ({ ...prev, [button]: 1 }));
     };
 
     const handleButtonRelease = (button) => {
