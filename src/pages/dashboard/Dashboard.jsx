@@ -7,8 +7,6 @@ export const Dashboard = () => {
     const [isGame, setIsGame] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const [handleClick, setHandleClick] = useState(false);
-    const debounceTimeouts = useRef({});
-    const DEBOUNCE_TIME = 200;
     const [controllerState, setControllerState] = useState({
         UP: 0,
         DOWN: 0,
@@ -21,29 +19,11 @@ export const Dashboard = () => {
     });
 
     const handleButtonPress = (button) => {
-        setControllerState((prev) => ({ ...prev, [button]: 1 }));
-
-        if (button === 'UP' || button === 'DOWN') {
-            if (debounceTimeouts.current[button]) {
-                return;
-            }
-
-            if (controllerState[button] === 1) {
-                return;
-            }
-
-            const timeoutId = setTimeout(() => {
-                delete debounceTimeouts.current[button];
-            }, DEBOUNCE_TIME);
-
-            debounceTimeouts.current[button] = timeoutId;
-        }
+            setControllerState((prev) => ({ ...prev, [button]: 1 }));
     };
 
     const handleButtonRelease = (button) => {
         setControllerState((prev) => ({ ...prev, [button]: 0 }));
-        clearTimeout(debounceTimeouts.current[button]);
-        delete debounceTimeouts.current[button];
     };
 
     return (
