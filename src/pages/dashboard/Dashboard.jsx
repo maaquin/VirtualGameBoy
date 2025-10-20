@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Content } from "../../components/content";
+import { Content } from "../../components/Content";
 import './style.css'
 
 export const Dashboard = () => {
