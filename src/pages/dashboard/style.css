@@ -19,15 +19,15 @@
 }
 
 @media (max-width: 600px) {
-  .game-boy {
-    scale: 80%;
-  }
+    .game-boy {
+        scale: 80%;
+    }
 }
 
 @media (max-width: 350px) {
-  .game-boy {
-    scale: 70%;
-  }
+    .game-boy {
+        scale: 70%;
+    }
 }
 
 .screen-container {
@@ -133,6 +133,10 @@
     flex-direction: column;
     height: 50%;
     position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 .gameboy-name {
@@ -252,13 +256,15 @@
     gap: 1.5em;
 }
 
-.button-select, .button-start {
+.button-select,
+.button-start {
     transform: rotate(-30deg);
     display: flex;
     flex-direction: column;
 }
 
-.button-select .btn2, .button-start .btn2 {
+.button-select .btn2,
+.button-start .btn2 {
     background-color: rgb(134, 134, 142);
     height: .7em;
     width: 2.5em;
