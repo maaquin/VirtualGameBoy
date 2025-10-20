@@ -36,29 +36,29 @@ Este proyecto es parte de mi portafolio y demuestra habilidades en:
 1. Clona el repositorio:
 ```bash
 git clone https://github.com/maaquin/VirtualGameBoy.git
-Instala dependencias:
+```
 
-bash
-Copiar código
+2. Instala dependencias:
+```bash
 npm install
-Ejecuta en desarrollo:
+```
 
-bash
-Copiar código
+3. Ejecuta en desarrollo:
+```bash
 npm run dev
-Abre tu navegador en http://localhost:5173 (Vite)
+```
 
-Selecciona un juego y disfruta de la emulación
+4. Abre tu navegador en http://localhost:5173 (Vite)
 
-🌐 Despliegue
-Enlace al proyecto desplegado: [Por agregar]
+5. Selecciona un juego y disfruta de la emulación
 
-✨ Notas
-Todos los estilos y diseño fueron creados manualmente para reproducir la estética de Game Boy
+## 🌐 Despliegue
+- Enlace al proyecto desplegado: [Por agregar]
 
-Soporta navegación por botones virtuales y teclado
+## ✨ Notas
+- Todos los estilos y diseño fueron creados manualmente para reproducir la estética de Game Boy
+- Soporta navegación por botones virtuales y teclado próximamente
+- Preparado para hosting estático
 
-Preparado para hosting estático
-
-📌 Autor
-Luciano Maquin – @Maaquin
+## 📌 Autor
+- Luciano Maquin – [@Maaquin](https://github.com/maaquin)
