@@ -52,13 +52,19 @@ npm run dev
 
 5. Selecciona un juego y disfruta de la emulación
 
+---
+
 ## 🌐 Despliegue
 - Enlace al proyecto desplegado: [Por agregar]
+
+---
 
 ## ✨ Notas
 - Todos los estilos y diseño fueron creados manualmente para reproducir la estética de Game Boy
 - Soporta navegación por botones virtuales y teclado próximamente
 - Preparado para hosting estático
+
+---
 
 ## 📌 Autor
 - Luciano Maquin – [@Maaquin](https://github.com/maaquin)
