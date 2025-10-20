@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Content } from "../../components/Content";
 import './style.css'
 
@@ -7,6 +7,8 @@ export const Dashboard = () => {
     const [isGame, setIsGame] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const [handleClick, setHandleClick] = useState(false);
+    const isHandlingRef = useRef(false);
+    const DEBOUNCE_TIME = 200;
     const [controllerState, setControllerState] = useState({
         UP: 0,
         DOWN: 0,
@@ -20,6 +22,18 @@ export const Dashboard = () => {
 
     const handleButtonPress = (button) => {
         setControllerState((prev) => ({ ...prev, [button]: 1 }));
+        
+        if (button === 'UP' || button === 'DOWN') {
+            if (isHandlingRef.current) {
+                return;
+            }
+
+            isHandlingRef.current = true;
+
+            setTimeout(() => {
+                isHandlingRef.current = false;
+            }, DEBOUNCE_TIME);
+        }
     };
 
     const handleButtonRelease = (button) => {
