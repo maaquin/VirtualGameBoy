@@ -15,7 +15,7 @@ export const SelectGame = ({ controllerState, setIsGame }) => {
     };
 
     useEffect(() => {
-        if (controllerState.DOWN === 1 && gameSelected !== games.length) {
+        if (controllerState.DOWN === 1 && gameSelected !== games.length - 1) {
             setGameSelected(prevGameSelected => prevGameSelected + 1);
         } else if (controllerState.UP === 1 && gameSelected !== 0) {
             setGameSelected(prevGameSelected => prevGameSelected - 1);
