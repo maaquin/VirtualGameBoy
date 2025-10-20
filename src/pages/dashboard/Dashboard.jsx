@@ -91,16 +91,6 @@ export const Dashboard = () => {
                         </div>
 
                         <div className="action-buttons">
-                            <div className="button-a">
-                                <button
-                                    className="btn"
-                                    onMouseDown={() => handleButtonPress('A')}
-                                    onMouseUp={() => handleButtonRelease('A')}
-                                    onTouchStart={() => handleButtonPress('A')}
-                                    onTouchEnd={() => handleButtonRelease('A')}
-                                />
-                                <span>A</span>
-                            </div>
                             <div className="button-b">
                                 <button
                                     className="btn"
@@ -109,7 +99,17 @@ export const Dashboard = () => {
                                     onTouchStart={() => handleButtonPress('B')}
                                     onTouchEnd={() => handleButtonRelease('B')}
                                 />
-                                <span>B</span>
+                                B
+                            </div>
+                            <div className="button-a">
+                                <button
+                                    className="btn"
+                                    onMouseDown={() => handleButtonPress('A')}
+                                    onMouseUp={() => handleButtonRelease('A')}
+                                    onTouchStart={() => handleButtonPress('A')}
+                                    onTouchEnd={() => handleButtonRelease('A')}
+                                />
+                                A
                             </div>
                         </div>
                     </div>
