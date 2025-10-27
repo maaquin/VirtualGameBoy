@@ -55,7 +55,7 @@ npm run dev
 ---
 
 ## 🌐 Despliegue
-- Enlace al proyecto desplegado: [Por agregar]
+- Enlace al proyecto desplegado: [virtual-game-boy](https://virtual-game-boy.vercel.app)
 
 ---
 
